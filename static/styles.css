@@ -1,0 +1,72 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #43A6C6, #145DA0);
+    text-align: center;
+    padding: 50px;
+}
+
+/* Result Container */
+.result-container {
+    background: white;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Result Box */
+.result-box {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Prediction Text */
+.result-text {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Potable Water - Green */
+.result-text.potable {
+    color: white;
+    background: #28a745;
+}
+
+/* Non-Potable Water - Red */
+.result-text.non-potable {
+    color: white;
+    background: #dc3545;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}

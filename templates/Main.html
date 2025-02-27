@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0px 0px 10px gray;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    input {
+        padding: 10px;
+        width: 80%;
+        margin: 10px;
+    }
+    
+    button {
+        padding: 10px;
+        background: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+    <div class="container">
+        <h1>Water Quality Prediction</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <div class="form-group">
+                <label for="ph">pH Value:</label>
+                <input type="number" step="any" id="ph" name="ph" required>
+            </div>
+            <div class="form-group">
+                <label for="hardness">Hardness:</label>
+                <input type="number" step="any" id="hardness" name="hardness" required>
+            </div>
+            <div class="form-group">
+                <label for="solids">Solids:</label>
+                <input type="number" step="any" id="solids" name="solids" required>
+            </div>
+            <div class="form-group">
+                <label for="chloramines">Chloramines:</label>
+                <input type="number" step="any" id="chloramines" name="chloramines" required>
+            </div>
+            <div class="form-group">
+                <label for="sulfate">Sulfate:</label>
+                <input type="number" step="any" id="sulfate" name="sulfate" required>
+            </div>
+            <div class="form-group">
+                <label for="conductivity">Conductivity:</label>
+                <input type="number" step="any" id="conductivity" name="conductivity" required>
+            </div>
+            <div class="form-group">
+                <label for="organic_carbon">Organic Carbon:</label>
+                <input type="number" step="any" id="organic_carbon" name="organic_carbon" required>
+            </div>
+            <div class="form-group">
+                <label for="trihalomethanes">Trihalomethanes:</label>
+                <input type="number" step="any" id="trihalomethanes" name="trihalomethanes" required>
+            </div>
+            <div class="form-group">
+                <label for="turbidity">Turbidity:</label>
+                <input type="number" step="any" id="turbidity" name="turbidity" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
